@@ -1,0 +1,11 @@
+﻿medida,valor
+deviance_modelo_final,351.89428421916216
+graus_liberdade_deviance,457.0
+p_valor_deviance,0.9999161597757673
+estatistica_hosmer_lemeshow,3.736264234886253
+graus_liberdade_hosmer_lemeshow,6.0
+p_valor_hosmer_lemeshow,0.7123157454157221
+numero_grupos_hosmer_lemeshow,8.0
+log_verossimilhanca,-175.9471421095811
+numero_observacoes,470.0
+numero_parametros,13.0
