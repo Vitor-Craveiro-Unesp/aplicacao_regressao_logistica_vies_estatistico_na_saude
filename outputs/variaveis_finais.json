@@ -1,0 +1,82 @@
+{
+    "arquivo_base": "thoracic_surgery_base_modelo_statsmodels.csv",
+    "variavel_resposta": "obito_1_ano",
+    "alpha": 0.05,
+    "criterio_remocao": "Remover somente se p_valor_wald > alpha e p_valor_deviance > alpha",
+    "n_observacoes": 470,
+    "n_eventos_obito": 70,
+    "n_nao_eventos": 400,
+    "variaveis_modelo_final": [
+        "constante",
+        "C(diagnostico, Treatment(reference='DGN3'))[T.DGN1]",
+        "C(diagnostico, Treatment(reference='DGN3'))[T.DGN2]",
+        "C(diagnostico, Treatment(reference='DGN3'))[T.DGN4]",
+        "C(diagnostico, Treatment(reference='DGN3'))[T.DGN5]",
+        "C(diagnostico, Treatment(reference='DGN3'))[T.DGN6]",
+        "C(diagnostico, Treatment(reference='DGN3'))[T.DGN8]",
+        "C(tamanho_tumor_tnm, Treatment(reference='OC11'))[T.OC12]",
+        "C(tamanho_tumor_tnm, Treatment(reference='OC11'))[T.OC13]",
+        "C(tamanho_tumor_tnm, Treatment(reference='OC11'))[T.OC14]",
+        "dispneia_antes_cirurgia",
+        "diabetes_mellitus_tipo_2",
+        "tabagismo"
+    ],
+    "variaveis_explicativas_modelo_final": [
+        "C(diagnostico, Treatment(reference='DGN3'))[T.DGN1]",
+        "C(diagnostico, Treatment(reference='DGN3'))[T.DGN2]",
+        "C(diagnostico, Treatment(reference='DGN3'))[T.DGN4]",
+        "C(diagnostico, Treatment(reference='DGN3'))[T.DGN5]",
+        "C(diagnostico, Treatment(reference='DGN3'))[T.DGN6]",
+        "C(diagnostico, Treatment(reference='DGN3'))[T.DGN8]",
+        "C(tamanho_tumor_tnm, Treatment(reference='OC11'))[T.OC12]",
+        "C(tamanho_tumor_tnm, Treatment(reference='OC11'))[T.OC13]",
+        "C(tamanho_tumor_tnm, Treatment(reference='OC11'))[T.OC14]",
+        "dispneia_antes_cirurgia",
+        "diabetes_mellitus_tipo_2",
+        "tabagismo"
+    ],
+    "blocos_finais": {
+        "diagnostico": [
+            "C(diagnostico, Treatment(reference='DGN3'))[T.DGN1]",
+            "C(diagnostico, Treatment(reference='DGN3'))[T.DGN2]",
+            "C(diagnostico, Treatment(reference='DGN3'))[T.DGN4]",
+            "C(diagnostico, Treatment(reference='DGN3'))[T.DGN5]",
+            "C(diagnostico, Treatment(reference='DGN3'))[T.DGN6]",
+            "C(diagnostico, Treatment(reference='DGN3'))[T.DGN8]"
+        ],
+        "tamanho_tumor_tnm": [
+            "C(tamanho_tumor_tnm, Treatment(reference='OC11'))[T.OC12]",
+            "C(tamanho_tumor_tnm, Treatment(reference='OC11'))[T.OC13]",
+            "C(tamanho_tumor_tnm, Treatment(reference='OC11'))[T.OC14]"
+        ],
+        "dispneia_antes_cirurgia": [
+            "dispneia_antes_cirurgia"
+        ],
+        "diabetes_mellitus_tipo_2": [
+            "diabetes_mellitus_tipo_2"
+        ],
+        "tabagismo": [
+            "tabagismo"
+        ]
+    },
+    "colunas_constantes": [
+        "constante"
+    ],
+    "n_parametros_modelo_final": 13,
+    "deviance_modelo_final": 351.89428421916216,
+    "graus_liberdade_residuo": 457,
+    "log_verossimilhanca": -175.9471421095811,
+    "blocos_removidos": [
+        "asma",
+        "infarto_miocardio_ate_6_meses",
+        "doenca_arterial_periferica",
+        "estado_desempenho_zubrod",
+        "idade",
+        "hemoptise_antes_cirurgia",
+        "tosse_antes_cirurgia",
+        "capacidade_vital_forcada",
+        "dor_antes_cirurgia",
+        "volume_expiratorio_forcado_1s",
+        "fraqueza_antes_cirurgia"
+    ]
+}
